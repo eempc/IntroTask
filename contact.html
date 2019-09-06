@@ -11,7 +11,7 @@
 </head>
 
 <body class="gradient1">
-    <div id="container">
+    <div class="container">
         <header class="gradient2">
             <img class="logo" src="logo.png">
             <h1>Molly's Dance School</h1>
@@ -37,6 +37,34 @@
                 </a>
             </div>
         </nav>
+
+        <section id="intro">
+            <h2>
+                Contact
+            </h2>
+            <p>
+                Fill in the form to contact us.
+            </p>
+        </section>
+
+        <main class="gradient3">
+            <form class="" name="contact-form" action="" method="">
+
+                    <input  type="text" minlength="3" maxlength="255" id="fullname" name="name" placeholder="Name..." required>
+                    <p id="required-fullname"></p>
+
+
+                    <input type="text" minlength="3" maxlength="255" id="emailaddress" name="email" placeholder="Email..." required>
+                    <p id="required-email"></p>
+
+                    <textarea type="text" minlength="10" id="messagebox" name="message" placeholder="Message..." required></textarea>
+                    <p id="required-message"></p>
+
+                <!--<input type="submit" value="Submit">-->
+                <button type="button" id="submit-contact-form">Submit (placeholder)</button>
+            </form>
+        </main>
+
     </div>
     <script src="scripts.js"></script>
 </body>

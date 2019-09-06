@@ -7,7 +7,7 @@
         sans-serif;
 }
 
-#container {
+.container {
     max-width: 1200px;
 
     margin: auto;
@@ -56,6 +56,11 @@ h1 {
 }
 
 h2 {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+h3 {
     color: red;
     border-bottom: 2px solid red;
 }
@@ -218,4 +223,41 @@ address {
     .dance-box {
         width: 100%;
     }
+}
+
+/* form */
+
+main * {
+    outline: 0px dotted black;
+}
+
+form {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+input {
+    height: 2em;
+    width: 50%;
+    padding: 0px 10px;
+
+}
+
+
+
+
+#messagebox {
+    width: 90%;
+    height: 200px;
+    padding: 5px 10px;
+}
+
+
+
+button {
+    align-self: center;
 }
