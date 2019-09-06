@@ -118,6 +118,7 @@ main {
         background: linear-gradient(45deg,
             rgb(50, 50, 50) 0%,
             rgb(122, 122, 122) 100%);
+
 }
 
 .dance-box {
@@ -129,5 +130,30 @@ main {
 .dance-box-image {
     width: 100%;
 
-    box-shadow: 1px 1px 1px white;
+    box-shadow: 1px 1px 1px grey;
+}
+
+/* Footer */
+
+footer {
+    height: 80px;
+           background: linear-gradient(45deg,
+               rgb(50, 50, 50) 0%,
+               rgb(122, 122, 122) 100%);
+}
+
+address {
+    text-align: center;
+    line-height: 50px;
+    margin: 0px;
+}
+
+.email-address {
+        text-align: center;
+        line-height: 0px;
+        margin: 0px;
+}
+
+.email-address::before {
+    content: "@ Email: ";
 }
