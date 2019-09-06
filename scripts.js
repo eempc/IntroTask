@@ -1,8 +1,12 @@
+// Set attribute for external link icons, target="_blank"
+
 const externalLinks = document.getElementsByClassName("nav-icon");
 
 for (let i = 0; i < externalLinks.length; i++) {
     externalLinks[i].setAttribute('target', '_blank');
 }
+
+// Placeholder javascript validation script in lieu of POSTing
 
 const submitButton = document.getElementById("submit-contact-form").addEventListener("click", validateFields);
 
@@ -33,5 +37,4 @@ function validateFields() {
     } else {
         messageBoxMessage.innerHTML = "Okay";
     }
-
 }
