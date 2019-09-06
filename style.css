@@ -1,16 +1,16 @@
 * {
-    outline: 1px dotted white;
+    outline: 0px dotted white;
     box-sizing: border-box;
     font-family: Verdana,
-    Geneva,
-    Tahoma,
-    sans-serif;
+        Geneva,
+        Tahoma,
+        sans-serif;
 }
 
 body {
     background: linear-gradient(to right,
-    rgb(0, 0, 0) 0%,
-    rgb(122, 122, 122) 100%)
+            rgb(0, 0, 0) 0%,
+            rgb(107, 107, 107) 100%);
 }
 
 #container {
@@ -19,26 +19,63 @@ body {
     margin: auto;
 }
 
+/* header styles */
+
 header {
     display: flex;
-    justify-content: space-between;
-    background: green;
+    justify-content: space-around;
+        background: linear-gradient(135deg,
+            rgb(36, 36, 36) 0%,
+            rgb(107, 107, 107) 100%);
     align-items: center;
     height: 120px;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: 100px
+}
+
+.top-left-corner-decal {
+    width: 0;
+    height: 0;
+    border-top: 20px solid red;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.bottom-right-corner-decal {
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid red;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 
 h1 {
     color: darkred;
+    font-size: 3em;
+
 }
 
 h2 {
     color: red;
+    border-bottom: 2px solid red;
 }
+
+/* Navigation */
 
 nav {
     width: 100%;
     height: 60px;
-    background: lightgray;
+    background: linear-gradient(to right,
+            rgb(50, 50, 50) 0%,
+            rgb(122, 122, 122) 100%);
     display: flex;
 }
 
@@ -47,40 +84,40 @@ nav {
 }
 
 #left-links {
-    background: blue;
+    background: transparent;
     display: flex;
     align-content: center;
     justify-content: flex-start;
 }
 
 #right-links {
-    background: lightblue;
+    background: transparent;
 }
 
 .nav-button {
-margin: 0px;
-padding: 0px;
-line-height: 60px;
-padding: 0px 20px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 60px;
+    padding: 0px 20px;
+    color: red;
+    border-bottom: 2px solid transparent;
 }
-
-
 
 .nav-button:hover {
-    background: purple;
+    background: rgb(70, 70, 70);
     transition: 1s;
-}
-
-.logo {
-    width: 100px;
-    height: 100px
+    border-bottom: 2px solid red;
 }
 
 
+/* Main */
 
 main {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+        background: linear-gradient(45deg,
+            rgb(50, 50, 50) 0%,
+            rgb(122, 122, 122) 100%);
 }
 
 .dance-box {
@@ -90,7 +127,7 @@ main {
 }
 
 .dance-box-image {
-    width: 230px;
-    height: 155px;
+    width: 100%;
+
     box-shadow: 1px 1px 1px white;
 }
