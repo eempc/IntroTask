@@ -142,25 +142,26 @@ main {
 
 footer {
     height: 80px;
+    text-align: center;
     background: linear-gradient(45deg,
             rgb(50, 50, 50) 0%,
             rgb(122, 122, 122) 100%);
 }
 
 address {
-    text-align: center;
     line-height: 50px;
     margin: 0px;
 }
 
 .email-address {
-    text-align: center;
     line-height: 0px;
     margin: 0px;
+    text-decoration: none;
+    color: black;
 }
 
 .email-address::before {
-    content: "@ Email: ";
+    content: "Email: ";
 }
 
 /* Bootstrap-like background colour styling rules */
