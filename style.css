@@ -13,7 +13,7 @@
     margin: auto;
 }
 
-/* header styles */
+/* header style */
 
 header {
     display: flex;
@@ -120,18 +120,11 @@ nav {
     height: 100%;
 }
 
-
-
-
-
-
 /* Main */
 
 main {
     display: flex;
     flex-wrap: wrap;
-
-
 }
 
 .dance-box {
@@ -142,7 +135,6 @@ main {
 
 .dance-box-image {
     width: 100%;
-
     box-shadow: 1px 1px 1px grey;
 }
 
@@ -171,7 +163,7 @@ address {
     content: "@ Email: ";
 }
 
-/* Bootstrap-like colour styling rules */
+/* Bootstrap-like background colour styling rules */
 
 .gradient1 {
     background: linear-gradient(to right,
