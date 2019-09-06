@@ -7,12 +7,6 @@
         sans-serif;
 }
 
-body {
-    background: linear-gradient(to right,
-            rgb(0, 0, 0) 0%,
-            rgb(107, 107, 107) 100%);
-}
-
 #container {
     max-width: 1200px;
 
@@ -24,9 +18,6 @@ body {
 header {
     display: flex;
     justify-content: space-around;
-        background: linear-gradient(135deg,
-            rgb(36, 36, 36) 0%,
-            rgb(107, 107, 107) 100%);
     align-items: center;
     height: 120px;
     position: relative;
@@ -74,15 +65,8 @@ h2 {
 nav {
     width: 100%;
     height: 60px;
-    background: linear-gradient(to right,
-            rgb(50, 50, 50) 0%,
-            rgb(122, 122, 122) 100%);
     display: flex;
     justify-content: space-between;
-}
-
-.links-group {
-
 }
 
 #left-links {
@@ -127,8 +111,8 @@ nav {
 }
 
 .nav-icon:hover {
-        background: rgb(121, 121, 121);
-        transition: 1s;
+    background: rgb(121, 121, 121);
+    transition: 1s;
 }
 
 .social-button {
@@ -146,9 +130,7 @@ nav {
 main {
     display: flex;
     flex-wrap: wrap;
-        background: linear-gradient(45deg,
-            rgb(50, 50, 50) 0%,
-            rgb(122, 122, 122) 100%);
+
 
 }
 
@@ -168,9 +150,9 @@ main {
 
 footer {
     height: 80px;
-           background: linear-gradient(45deg,
-               rgb(50, 50, 50) 0%,
-               rgb(122, 122, 122) 100%);
+    background: linear-gradient(45deg,
+            rgb(50, 50, 50) 0%,
+            rgb(122, 122, 122) 100%);
 }
 
 address {
@@ -180,13 +162,39 @@ address {
 }
 
 .email-address {
-        text-align: center;
-        line-height: 0px;
-        margin: 0px;
+    text-align: center;
+    line-height: 0px;
+    margin: 0px;
 }
 
 .email-address::before {
     content: "@ Email: ";
+}
+
+/* Bootstrap-like colour styling rules */
+
+.gradient1 {
+    background: linear-gradient(to right,
+            rgb(0, 0, 0) 0%,
+            rgb(107, 107, 107) 100%);
+}
+
+.gradient2 {
+    background: linear-gradient(135deg,
+            rgb(36, 36, 36) 0%,
+            rgb(107, 107, 107) 100%);
+}
+
+.gradient3 {
+    background: linear-gradient(to right,
+            rgb(77, 77, 77) 0%,
+            rgb(122, 122, 122) 100%);
+}
+
+.gradient4 {
+    background: linear-gradient(45deg,
+            rgb(50, 50, 50) 0%,
+            rgb(122, 122, 122) 100%);
 }
 
 /* Responsive */
@@ -202,4 +210,3 @@ address {
         width: 100%;
     }
 }
-
