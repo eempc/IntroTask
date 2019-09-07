@@ -40,7 +40,7 @@
 
         <section id="intro">
             <h2>
-                Gallery
+                Image and Video Gallery
             </h2>
             <p>
                 Lorum ipsum...
@@ -49,7 +49,7 @@
         </section>
 
         <main>
-            <div class="container-slideshow">
+            <section class="container-slideshow gradient2">
                 <div class="slide">
                     <img src="placeholder.jpg" class="slide-image">
                 </div>
@@ -63,10 +63,37 @@
                 <!-- Next and previous buttons -->
                 <a class="previous" onclick="navigateSlides(-1)">&#10094;</a>
                 <a class="next" onclick="navigateSlides(1)">&#10095;</a>
-            </div>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/eiHXASgRTcA"></iframe>
-            </div>
+            </section>
+
+            <section class="video-container gradient4">
+                <video controls class="item0">
+                    <source src="gPNXNg9.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-description item1">
+                    <h3>Tango</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="video-description item2">
+                    <h3>Tap</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <video controls class="item3">
+                    <source src="gPNXNg9.mp4" type="video/mp4">
+                </video>
+
+                <video controls class="item4">
+                    <source src="gPNXNg9.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-description item5">
+                    <h3>Ballroom</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+            </section>
         </main>
 
         <footer class="gradient4">
@@ -75,7 +102,7 @@
             </address>
 
         </footer>
-        </main>
+
         <script src="scripts.js"></script>
         <script src="slides.js"></script>
 </body>
