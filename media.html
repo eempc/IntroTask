@@ -48,20 +48,25 @@
 
         </section>
 
-        <main class="container-slideshow">
-            <div class="slide">
-                <img src="placeholder.jpg" class="slide-image">
-            </div>
-            <div class="slide">
-                <img src="placeholder2.jpg" class="slide-image">
-            </div>
-            <div class="slide">
-                <img src="placeholder3.jpg" class="slide-image">
-            </div>
+        <main>
+            <div class="container-slideshow">
+                <div class="slide">
+                    <img src="placeholder.jpg" class="slide-image">
+                </div>
+                <div class="slide">
+                    <img src="placeholder2.jpg" class="slide-image">
+                </div>
+                <div class="slide">
+                    <img src="placeholder3.jpg" class="slide-image">
+                </div>
 
-            <!-- Next and previous buttons -->
-            <a class="previous" onclick="navigateSlides(-1)">&#10094;</a>
-            <a class="next" onclick="navigateSlides(1)">&#10095;</a>
+                <!-- Next and previous buttons -->
+                <a class="previous" onclick="navigateSlides(-1)">&#10094;</a>
+                <a class="next" onclick="navigateSlides(1)">&#10095;</a>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/eiHXASgRTcA"></iframe>
+            </div>
         </main>
 
         <footer class="gradient4">
@@ -70,9 +75,9 @@
             </address>
 
         </footer>
-    </div>
-    <script src="scripts.js"></script>
-
+        </main>
+        <script src="scripts.js"></script>
+        <script src="slides.js"></script>
 </body>
 
 </html>
