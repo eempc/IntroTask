@@ -1,5 +1,4 @@
 * {
-    outline: 0px dotted white;
     box-sizing: border-box;
     font-family: Verdana,
         Geneva,
@@ -9,7 +8,6 @@
 
 .container {
     max-width: 1200px;
-
     margin: 0px auto;
 }
 
@@ -52,6 +50,8 @@ header {
     right: 0px;
 }
 
+/* heading styles */
+
 h1 {
     color: red;
     font-size: 3em;
@@ -70,8 +70,7 @@ h3 {
     margin-block-start: 0px;
 }
 
-
-/* Navigation */
+/* Navigation bar */
 
 nav {
     width: 100%;
@@ -100,7 +99,6 @@ nav {
 
 .nav-button:hover {
     background: rgb(70, 70, 70);
-
     border-bottom: 2px solid red;
     text-decoration: underline;
 }
@@ -119,13 +117,12 @@ nav {
     border-radius: 50%;
     margin: 10px;
     padding: 10px;
-    border: 1px dotted transparent;
     transition: 1s;
 }
 
 .nav-icon:hover {
     background: rgb(121, 121, 121);
-
+    border: 1px dotted black;
 }
 
 .social-button {
@@ -133,19 +130,20 @@ nav {
     height: 100%;
 }
 
+.nav-button:active {
+    background-color: yellow;
+}
+
 /* Welcome */
 
 #intro {
     text-align: center;
-
-
 }
 
 #intro p {
     width: 80%;
     color: rgb(148, 132, 132);
     margin: auto auto 25px auto;
-
 }
 
 /* Main */
@@ -159,8 +157,6 @@ nav {
 .dance-box {
     width: 33%;
     padding: 20px;
-
-
 }
 
 .dance-box-image {
@@ -181,17 +177,6 @@ footer {
 address {
     line-height: 80px;
     margin: 0px;
-}
-
-.email-address {
-    line-height: 0px;
-    margin: 0px;
-    text-decoration: none;
-    color: black;
-}
-
-.email-address::before {
-    content: "Email: ";
 }
 
 /* Bootstrap-like background colour styling rules */
@@ -332,10 +317,6 @@ video, .video-description {
     #intro p {
         width: 90%;
     }
-}
-
-@media (max-width: 720px) {
-
 }
 
 @media (max-width: 600px) {
