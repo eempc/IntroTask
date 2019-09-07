@@ -6,7 +6,7 @@ for (let i = 0; i < externalLinks.length; i++) {
     externalLinks[i].setAttribute('target', '_blank');
 }
 
-// Placeholder javascript validation script in lieu of POSTing
+// Placeholder javascript form validation script in lieu of POSTing
 
 const submitButton = document.getElementById("submit-contact-form").addEventListener("click", validateFields);
 
@@ -37,4 +37,31 @@ function validateFields() {
     } else {
         messageBoxMessage.innerHTML = "Okay";
     }
+}
+
+// Barebones Slideshow script
+
+let currentSlide = 0;
+showSlide(currentSlide);
+
+function showSlide(x) {
+    // Get the slides into an array
+    const slides = document.getElementsByClassName("slide");
+
+    // Ensure index is not out of bounds
+    if (x >= slides.length) currentSlide = 0;
+    if (x < 0) currentSlide = slides.length - 1;
+
+    // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    // Then show the current slide
+    slides[currentSlide].style.display = "block";
+
+}
+
+function navigateSlides(x) {
+    showSlide(currentSlide += x);
 }

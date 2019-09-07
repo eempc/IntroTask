@@ -10,7 +10,7 @@
 .container {
     max-width: 1200px;
 
-    margin: auto;
+    margin: 0px auto;
 }
 
 /* header style */
@@ -143,15 +143,17 @@ nav {
 
 /* Main */
 
-main {
+.flex-wrap {
     display: flex;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .dance-box {
     width: 33%;
     padding: 20px;
-    flex-grow: 1;
+
+
 }
 
 .dance-box-image {
@@ -170,7 +172,7 @@ footer {
 }
 
 address {
-    line-height: 50px;
+    line-height: 80px;
     margin: 0px;
 }
 
@@ -238,9 +240,40 @@ button {
     align-self: center;
 }
 
-form > p {
+form>p {
     color: red;
     font-size: 0.7em;
+}
+
+/* Slideshow carousel */
+
+.container-slideshow {
+    padding: 20px;
+    position: relative;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.slide {
+    /* Hide slides by default */
+
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    transition: 0.5s ease;
+    background-color: rgb(70, 70, 70, 0.5)
+}
+
+.next {
+    right: 0;
 }
 
 /* Responsive */
@@ -253,6 +286,10 @@ form > p {
     input {
         width: 75%;
     }
+
+    #intro p {
+        width: 90%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -263,5 +300,8 @@ form > p {
     input {
         width: 100%;
     }
-}
 
+    #intro p {
+        width: 95%;
+    }
+}
