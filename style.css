@@ -94,11 +94,12 @@ nav {
     color: red;
     border-bottom: 2px solid transparent;
     text-decoration: none;
+    transition: 1s;
 }
 
 .nav-button:hover {
     background: rgb(70, 70, 70);
-    transition: 1s;
+
     border-bottom: 2px solid red;
     text-decoration: underline;
 }
@@ -118,11 +119,12 @@ nav {
     margin: 10px;
     padding: 10px;
     border: 1px dotted transparent;
+    transition: 1s;
 }
 
 .nav-icon:hover {
     background: rgb(121, 121, 121);
-    transition: 1s;
+
 }
 
 .social-button {
@@ -260,10 +262,10 @@ form>p {
 
 .slide-image {
     width: 90%;
+    box-shadow: 1px 1px white;
 }
 
 .slide {
-    /* Hide slides by default */
     text-align: inherit;
 }
 
@@ -274,8 +276,12 @@ form>p {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    transition: 0.5s ease;
-    background-color: rgb(70, 70, 70, 0.5);
+    transition: 0.5s;
+    background-color: rgba(139, 139, 139, 0.5);
+}
+
+.previous:hover, .next:hover {
+    background-color: rgba(182, 182, 182, 0.8);
 }
 
 .previous {
@@ -297,6 +303,7 @@ iframe {
     width: 720px;
     height: 480px;
     margin: 40px 0px;
+    box-shadow: 1px 1px white;
 }
 
 /* Responsive */
@@ -312,6 +319,13 @@ iframe {
 
     #intro p {
         width: 90%;
+    }
+}
+
+@media (max-width: 720px) {
+    iframe {
+            width: 480px;
+            height: 320px;
     }
 }
 
