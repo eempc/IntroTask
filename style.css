@@ -103,6 +103,10 @@ nav {
     text-decoration: underline;
 }
 
+.nav-button:active {
+    background-color: yellow;
+}
+
 #right-links {
     background: transparent;
     display: flex;
@@ -130,11 +134,7 @@ nav {
     height: 100%;
 }
 
-.nav-button:active {
-    background-color: yellow;
-}
-
-/* Welcome */
+/* Intro section welcome */
 
 #intro {
     text-align: center;
@@ -302,7 +302,6 @@ video, .video-description {
     order: 0;
 }
 
-
 /* Responsive */
 
 @media (max-width: 992px) {
@@ -320,11 +319,7 @@ video, .video-description {
 }
 
 @media (max-width: 600px) {
-    .dance-box {
-        width: 100%;
-    }
-
-    input {
+    .dance-box, input {
         width: 100%;
     }
 
