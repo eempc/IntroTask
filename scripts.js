@@ -8,8 +8,6 @@ for (let i = 0; i < externalLinks.length; i++) {
 
 // Placeholder javascript form validation script in lieu of POSTing
 
-//const submitButton = document.getElementById("submit-contact-form").addEventListener("click", validateFields);
-
 function validateFields() {
     const nameInput = document.getElementById("fullname");
     const nameMessage = document.getElementById("required-fullname");

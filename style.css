@@ -248,7 +248,7 @@ form>p {
 
 .slide-image {
     width: 90%;
-    box-shadow: 1px 1px white;
+    box-shadow: 1px 1px 1px grey;
 }
 
 .slide {
@@ -334,6 +334,7 @@ video, .video-description {
 
     video, .video-description {
         width: 100%;
+        padding: 0px;
     }
 
     .item0 {

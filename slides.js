@@ -18,7 +18,6 @@ function showSlide(x) {
 
     // Then show the current slide
     slides[currentSlide].style.display = "block";
-
 }
 
 function navigateSlides(x) {
